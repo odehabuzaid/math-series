@@ -19,26 +19,27 @@ def test_fibonacci3():
     assert fibonacci(3) == 2
 
 
+def test_lucas0():
+    assert lucas(0) == 2
 
-# def test_lucas(n: int):
-#     if n == 0:
-#         assert lucas(n) == 2
-#     elif n == 1:
-#         assert lucas(n) == 1
-#     elif n == 2:
-#         assert lucas(n) == 3
-#     elif n == 3:
-#         assert lucas(n) == 4
-#     elif n == 4:
-#         assert lucas(n) == 7
-#     elif n == 5:
-#         assert lucas(n) == 11
-#     elif n == 6:
-#         assert lucas(n) == 18
+def test_lucas1():
+    assert lucas(1) == 1
+
+def test_lucas2():
+    assert lucas(2) == 3
+
+def test_lucas3():
+    assert lucas(3) == 4
 
 
-# def test_sum_series(n: int, f: int = 1, s: int = 2):
-#     if f == 1 and s == 2:
-#         assert sum_series(n) == fibonacci(n)
-#     elif f == 2 and s == 1:
-#         assert sum_series(n) == lucas(n)
+def test_sum_series0():
+    assert sum_series(0) == 2
+
+def test_sum_series1():
+    assert sum_series(1) == 1
+
+def test_sum_series2():
+    assert sum_series(2) == 3
+
+def test_sum_series3():
+    assert sum_series(3) == 4

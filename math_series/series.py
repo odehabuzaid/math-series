@@ -26,7 +26,4 @@ print(
 
 
 def sum_series(n: int, first: int = 0, second: int = 1):
-    if first == 0 and second == 1:
-        return fibonacci(n)
-    elif first == 2 and second == 1:
-        return lucas(n)
+    return fibonacci(n) if first == 0 and second == 1 else lucas(n)

@@ -32,14 +32,27 @@ def test_lucas3():
     assert lucas(3) == 4
 
 
+def test_sum_series0_default_values():
+    assert sum_series(0) == fibonacci(0)
+
+def test_sum_series1_default_values():
+    assert sum_series(1) == fibonacci(1)
+
+def test_sum_series2_default_values():
+    assert sum_series(2) == fibonacci(2)
+
+def test_sum_series3_default_values():
+    assert sum_series(3) == fibonacci(3)
+
+
 def test_sum_series0():
-    assert sum_series(0) == 2
+    assert sum_series(0,2,1) == lucas(0)
 
 def test_sum_series1():
-    assert sum_series(1) == 1
+    assert sum_series(1,2,1) == lucas(1)
 
 def test_sum_series2():
-    assert sum_series(2) == 3
+    assert sum_series(2,2,1) == lucas(2)
 
 def test_sum_series3():
-    assert sum_series(3) == 4
+    assert sum_series(3,2,1) == lucas(3)

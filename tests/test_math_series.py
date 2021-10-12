@@ -54,5 +54,12 @@ def test_sum_series1():
 def test_sum_series2():
     assert sum_series(2,2,1) == lucas(2)
 
+
 def test_sum_series3():
-    assert sum_series(3,2,1) == lucas(3)
+    assert sum_series(1,5,4) == 4
+
+def test_sum_series4():
+    assert sum_series(2,5,4) == 9
+
+def test_sum_series5():
+    assert sum_series(3,3,4) == 11

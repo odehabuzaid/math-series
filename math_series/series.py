@@ -37,33 +37,11 @@ def sum_series(n: int, first: int = 0, second: int = 1):
                     return sum_series(n - 1, first, second) + sum_series(n - 2, first, second)
  
 """
-Mohammad Nimrawi, Oct 12 at 12:05pm
 fix the sum_series 
 should be 4
 if n=0 or 1 and you add two values
 for example the output here
 sum_series(1,5,4)
 should be 4
-
-Both the fibonacci series and the lucas numbers are based on an identical formula. 
-
-Add a third function called sum_series 
-
-with one required parameter and two optional parameters. 
-
-The required parameter will determine which element in the series to print. 
-
-The two optional parameters will have default values of 0 and 1 
-
-will determine the first two values for the series to be produced.
-
-Calling this function with no optional parameters will produce numbers from the fibonacci series. 
-
-Calling it with the optional arguments 2 and 1 will produce values from the lucas numbers. 
-
-Other values for the optional parameters will produce other series. 
-
-Again, you may use recursion or iteration, or both. 
-
 """
 
